@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#120811">
+  <title>For Oshini ❤️ — From Kithsara</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient"></div>
+  <div class="hearts" id="hearts" aria-hidden="true"></div>
+  <header class="topbar"><span class="brand">♡ FOR OSHINI</span><div class="header-actions"><span class="top-note">from Kithsara, with love</span><button class="music-toggle" id="musicToggle" aria-pressed="false">♫ <span id="musicLabel">Play music</span></button></div></header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow"><span class="tiny-heart">♥</span> A LITTLE WEBSITE, JUST FOR YOU</div>
+      <h1>For my<br><em>Oshini</em><span class="hero-heart">♥</span></h1>
+      <p class="intro">Made with love by Kithsara.<br>You mean more to me than the whole world.</p>
+      <button class="primary" id="surpriseBtn">Open your little surprise <span>♥</span></button>
+      <div class="scroll-hint">SCROLL TO EXPLORE <span>↓</span></div>
+    </section>
+
+    <section class="message section">
+      <div class="section-label">01 — A NOTE FOR YOU</div>
+      <div class="glass note-card">
+        <div class="quote-mark">“</div>
+        <h2>Dear Oshini,</h2>
+        <p>I made this little website just for you. I want you to know how special you are to me and how much happiness you bring into my life.</p>
+        <p>I'm Kithsara, your boyfriend, and I love you more than the world. I hope this page makes you smile whenever you visit it.</p>
+        <p class="signature">Forever cheering for you, <span>♥</span><br><strong>Kithsara</strong></p>
+      </div>
+    </section>
+
+    <section class="games section" id="games">
+      <div class="section-label">02 — A LITTLE PLAYTIME</div>
+      <h2 class="section-title">Play a little <em>love game</em></h2>
+      <div class="game-grid">
+        <article class="glass game-card">
+          <div class="game-icon">💗</div>
+          <h3>Heart Catcher</h3>
+          <p>Tap the hearts as they appear. How many can you catch?</p>
+          <div class="score-line">Score: <strong id="score">0</strong> <span>Time: <strong id="time">15</strong>s</span></div>
+          <div class="play-area" id="playArea"><span class="game-hint" id="gameHint">Press start to play!</span></div>
+          <button class="primary game-button" id="startGame">Start game</button>
+          <p class="game-result" id="gameResult" aria-live="polite"></p>
+        </article>
+        <article class="glass game-card">
+          <div class="game-icon">🌷</div>
+          <h3>Pick a flower</h3>
+          <p>Choose one and reveal a little message from Kithsara.</p>
+          <div class="flower-row">
+            <button class="flower" data-message="You deserve a day full of happiness. 🌸" aria-label="Choose pink flower">🌸</button>
+            <button class="flower" data-message="I hope you always remember how special you are. 🌷" aria-label="Choose tulip">🌷</button>
+            <button class="flower" data-message="Sending you a little sunshine and a big smile. 🌻" aria-label="Choose sunflower">🌻</button>
+          </div>
+          <div class="flower-message" id="flowerMessage">Your surprise message will appear here.</div>
+        </article>
+        <article class="glass game-card memory-card">
+          <div class="game-icon">✨</div>
+          <h3>Find the matching hearts</h3>
+          <p>Flip the cards and find all three matching pairs.</p>
+          <div class="memory-grid" id="memoryGrid"></div>
+          <div class="memory-status" id="memoryStatus" aria-live="polite">Pairs found: 0 / 3</div>
+          <button class="outline game-button" id="resetMemory">Shuffle cards</button>
+        </article>
+      </div>
+    </section>
+
+
+    <section class="quiz section" id="quiz">
+      <div class="section-label">03 — A LITTLE QUIZ</div>
+      <h2 class="section-title">A tiny question <em>for Oshini</em></h2>
+      <div class="glass quiz-card">
+        <div class="quiz-sparkle">✦</div>
+        <h3 id="quizQuestion">Who made this little website for you?</h3>
+        <div class="quiz-options" id="quizOptions">
+          <button class="quiz-option" data-answer="wrong">A friendly unicorn 🦄</button>
+          <button class="quiz-option" data-answer="correct">Kithsara ❤️</button>
+          <button class="quiz-option" data-answer="wrong">A sleepy panda 🐼</button>
+        </div>
+        <p class="quiz-feedback" id="quizFeedback" aria-live="polite">Choose your answer, lovely!</p>
+        <button class="outline" id="nextQuestion">Next question</button>
+      </div>
+    </section>
+
+    <section class="reasons section">
+      <div class="section-label">04 — LITTLE REMINDERS</div>
+      <h2 class="section-title">A few reasons <em>you're special</em></h2>
+      <div class="reason-grid">
+        <article class="glass reason"><div>✧</div><h3>Your smile</h3><p>It can make a simple moment feel brighter.</p></article>
+        <article class="glass reason"><div>♡</div><h3>Your kindness</h3><p>The little things you do matter more than you know.</p></article>
+        <article class="glass reason"><div>☼</div><h3>Being you</h3><p>There is only one Oshini, and that's wonderful.</p></article>
+      </div>
+    </section>
+
+    <section class="final section">
+      <div class="glow-heart">♥</div>
+      <h2>Oshini, you mean<br><em>more than the world.</em></h2>
+      <p>With love, from Kithsara ❤️</p>
+      <button class="outline" id="heartBtn">Send some hearts ♥</button>
+      <div class="footer-note">MADE ESPECIALLY FOR OSHINI · FROM KITHSARA</div>
+    </section>
+  </main>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-card glass">
+      <button class="close" id="closeModal" aria-label="Close">×</button>
+      <div class="modal-heart">♥</div>
+      <p class="section-label">A LITTLE SURPRISE</p>
+      <h2>Hey, Oshini!</h2>
+      <p>It's Kithsara. I made this page to remind you that you're appreciated, loved, and truly special. You mean more to me than the world. ❤️</p>
+      <button class="primary" id="modalHeartBtn">Send love <span>♥</span></button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
